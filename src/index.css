@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.animated-bg-dark {
+  border-radius: 0.91rem;
+  border: none;
+  animation: loader 3s infinite linear;
+  background-color: #f6f7f8;
+  background: linear-gradient(to right, #202020, #343a40, #202020);
+  background-size: 50rem 3.15rem;
+  height: 0.8rem;
+}
+.animated-bg-light {
+  border-radius: 0.91rem;
+  border: none;
+  animation: loader 3s infinite linear;
+  background-color: #f6f7f8;
+  background: linear-gradient(to right, #adb5bd, white, #adb5bd);
+  background-size: 50rem 3.15rem;
+  height: 0.8rem;
+}
+
+@keyframes loader {
+  0% {
+    background-position: -50rem 0rem;
+  }
+  100% {
+    background-position: 50rem 0rem;
+  }
+}
